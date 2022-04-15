@@ -6,47 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>Animaciones proyecto</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>proyecto animaciones</title>
 </head>
 
 <body>
 
     <section>
         <div>
-            <h1>Sin transición</h1>
-            <div class="box box1"></div>
+            <h1 data-aos="zoom-in-up">pagina con animaciones</h1>
+            <div class="box box1"> animacion superior</div>
         </div>
 
         <div>
-            <h2>Con transición</h2>
-            <div class="box box2"></div>
+            <h2 data-aos="flip-down">animaciones en la pagina</h2>
+            <div class="box box2"> (texto descriptivo)</div>
         </div>
     </section>
 
     <section class="container-circle">
 
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-        <div class="circle4"></div>
-        <div class="circle5"></div>
+        <div class="circle1">punto 1</div>
+        <div class="circle2">punto 2</div>
+        <div class="circle3">punto 3</div>
+        <div class="circle4">punto 4</div>
+        <div class="circle5">punto 5</div>
 
     </section>
 
-    <div class="square1"></div>
-    <div class="square2"></div>
-
-    <div class="combinado">
-
+    <div class="square1">
+        <p data-aos="flip-left">platon</p>
     </div>
+    <div class="square2">(frases de platon)
+        <ul data-aos="fade-right">
+            <li>
+                La mayor declaración de amor es la que no se hace; el hombre que siente mucho, habla poco.
+            </li>
+            <li>
+                La música es para el alma lo que la gimnasia para el cuerpo
+            </li>
+        </ul>
+    </div>
+
+    <!-- <div class="combinado"> -->
+    <!-- <ul> -->
+    <!-- <li>Ω</li> -->
+    <!-- </ul> -->
+    <!-- </div> -->
 
     <div class="animaciones">
-
+        <p data-aos="fade-up">&copy; - desarrolado por: centu.01</p>
     </div>
 
-    <footer>
-        <p>&copy; - desarrolado por: centu.01</p>
-    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
